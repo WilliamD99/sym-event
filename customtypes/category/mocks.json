@@ -1,0 +1,26 @@
+[
+    {
+        "uid": "basketball",
+        "name": "Basketball",
+        "icon": {
+            "dimensions": {
+                "width": 200,
+                "height": 200
+            },
+            "alt": "Basketball icon",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1546519638-68e109498573"
+        },
+        "meta_title": "Basketball Events - Sports Media",
+        "meta_description": "Discover all basketball events, games, and tournaments in our comprehensive basketball category.",
+        "meta_image": {
+            "dimensions": {
+                "width": 2400,
+                "height": 1260
+            },
+            "alt": "Basketball category meta image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1546519638-68e109498573"
+        }
+    }
+]

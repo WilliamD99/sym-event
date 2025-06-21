@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Nike",
+        "logo": {
+            "dimensions": {
+                "width": 800,
+                "height": 400
+            },
+            "alt": "Nike logo",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+        },
+        "description": [
+            {
+                "type": "paragraph",
+                "text": "Nike, Inc. is a multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services."
+            }
+        ],
+        "website_url": {
+            "link_type": "Web",
+            "url": "https://www.nike.com"
+        },
+        "meta_title": "Nike - Official Sponsor",
+        "meta_description": "Nike is a proud sponsor of athletic events worldwide, providing innovative sports gear and apparel.",
+        "meta_image": {
+            "dimensions": {
+                "width": 2400,
+                "height": 1260
+            },
+            "alt": "Nike sponsor meta image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+        }
+    }
+]

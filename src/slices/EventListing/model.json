@@ -1,0 +1,28 @@
+{
+    "id": "event_listing",
+    "type": "SharedSlice",
+    "name": "EventListing",
+    "description": "Event Listing",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "initial",
+            "description": "Default",
+            "imageUrl": "",
+            "primary": {
+                "title": {
+                    "type": "StructuredText",
+                    "config": {
+                        "label": "Title",
+                        "placeholder": "Events title...",
+                        "allowTargetBlank": true,
+                        "single": "heading1,heading2,heading3,heading4,heading5,heading6"
+                    }
+                }
+            },
+            "items": {}
+        }
+    ]
+}

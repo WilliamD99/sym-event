@@ -1,0 +1,90 @@
+[
+    {
+        "description": [
+            {
+                "type": "paragraph",
+                "text": "Helping homes and businesses recover from fire, water, and mold damage with fast, reliable service.",
+                "spans": []
+            }
+        ],
+        "address": [
+            {
+                "type": "paragraph",
+                "text": "#127 - 8370 Ontario Street, Vancouver, BC V5X0K5",
+                "spans": []
+            }
+        ],
+        "aboutUsLinks": [
+            {
+                "linkText": "Services",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "#services"
+                }
+            },
+            {
+                "linkText": "News",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "#news"
+                }
+            },
+            {
+                "linkText": "Franchises",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "#franchises"
+                }
+            }
+        ],
+        "getInTouchLinks": [
+            {
+                "linkText": "Contact",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "#contact"
+                }
+            },
+            {
+                "linkText": "Privacy Policy",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "#privacy"
+                }
+            },
+            {
+                "linkText": "Terms of Service",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "#terms"
+                }
+            }
+        ],
+        "socialLinks": [
+            {
+                "platform": "Facebook",
+                "linkText": "Facebook",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "https://facebook.com"
+                }
+            },
+            {
+                "platform": "Twitter",
+                "linkText": "Twitter",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "https://twitter.com"
+                }
+            },
+            {
+                "platform": "Instagram",
+                "linkText": "Instagram",
+                "linkUrl": {
+                    "link_type": "Web",
+                    "url": "https://instagram.com"
+                }
+            }
+        ]
+    }
+]

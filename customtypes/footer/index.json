@@ -1,0 +1,101 @@
+{
+    "id": "footer",
+    "label": "Footer",
+    "format": "custom",
+    "repeatable": false,
+    "status": true,
+    "json": {
+        "Main": {
+            "description": {
+                "type": "StructuredText",
+                "config": {
+                    "label": "Description",
+                    "placeholder": "Company description text",
+                    "allowTargetBlank": false,
+                    "single": "paragraph"
+                }
+            },
+            "address": {
+                "type": "StructuredText",
+                "config": {
+                    "label": "Address",
+                    "placeholder": "Company address",
+                    "allowTargetBlank": false,
+                    "single": "paragraph"
+                }
+            },
+            "aboutUsLinks": {
+                "type": "Group",
+                "config": {
+                    "label": "About Us Links",
+                    "repeat": true,
+                    "fields": {
+                        "linkText": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Link Text",
+                                "placeholder": "Link display text"
+                            }
+                        },
+                        "linkUrl": {
+                            "type": "Link",
+                            "config": {
+                                "label": "Link URL",
+                                "placeholder": "Link destination",
+                                "allowTargetBlank": true
+                            }
+                        }
+                    }
+                }
+            },
+            "getInTouchLinks": {
+                "type": "Group",
+                "config": {
+                    "label": "Get In Touch Links",
+                    "repeat": true,
+                    "fields": {
+                        "linkText": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Link Text",
+                                "placeholder": "Link display text"
+                            }
+                        },
+                        "linkUrl": {
+                            "type": "Link",
+                            "config": {
+                                "label": "Link URL",
+                                "placeholder": "Link destination",
+                                "allowTargetBlank": true
+                            }
+                        }
+                    }
+                }
+            },
+            "socialLinks": {
+                "type": "Group",
+                "config": {
+                    "label": "Social Links",
+                    "repeat": true,
+                    "fields": {
+                        "platform": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Platform",
+                                "placeholder": "e.g., Facebook, Twitter, Instagram"
+                            }
+                        },
+                        "linkUrl": {
+                            "type": "Link",
+                            "config": {
+                                "label": "Link URL",
+                                "placeholder": "Social media link",
+                                "allowTargetBlank": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

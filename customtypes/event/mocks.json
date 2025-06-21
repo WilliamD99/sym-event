@@ -1,0 +1,68 @@
+[
+    {
+        "uid": "nba-finals-2024",
+        "title": "NBA Finals 2024: Lakers vs Celtics",
+        "category": {
+            "id": "category-basketball",
+            "type": "category",
+            "tags": [],
+            "lang": "en-us",
+            "slug": "basketball",
+            "first_publication_date": "2024-01-01T00:00:00.000Z",
+            "last_publication_date": "2024-01-01T00:00:00.000Z"
+        },
+        "date": "2024-06-15T20:00:00.000Z",
+        "cover_image": {
+            "dimensions": {
+                "width": 1200,
+                "height": 630
+            },
+            "alt": "NBA Finals 2024 banner",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1546519638-68e109498573"
+        },
+        "description": [
+            {
+                "type": "paragraph",
+                "text": "The most anticipated basketball event of the year returns as the Los Angeles Lakers face off against the Boston Celtics in an epic showdown for the championship title."
+            }
+        ],
+        "location": "Crypto.com Arena, Los Angeles, CA",
+        "sponsors": [
+            {
+                "sponsor": {
+                    "id": "sponsor-nike",
+                    "type": "sponsor",
+                    "tags": [],
+                    "lang": "en-us",
+                    "slug": "nike",
+                    "first_publication_date": "2024-01-01T00:00:00.000Z",
+                    "last_publication_date": "2024-01-01T00:00:00.000Z"
+                }
+            },
+            {
+                "sponsor": {
+                    "id": "sponsor-adidas",
+                    "type": "sponsor",
+                    "tags": [],
+                    "lang": "en-us",
+                    "slug": "adidas",
+                    "first_publication_date": "2024-01-01T00:00:00.000Z",
+                    "last_publication_date": "2024-01-01T00:00:00.000Z"
+                }
+            }
+        ],
+        "tags": "NBA, Finals, Basketball, Lakers, Celtics, Championship",
+        "meta_title": "NBA Finals 2024: Lakers vs Celtics - Watch Live",
+        "meta_description": "Don't miss the NBA Finals 2024 as Lakers take on Celtics in the championship series. Get tickets and watch live coverage.",
+        "meta_image": {
+            "dimensions": {
+                "width": 2400,
+                "height": 1260
+            },
+            "alt": "NBA Finals meta image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1546519638-68e109498573"
+        }
+    }
+]

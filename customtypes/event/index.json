@@ -1,0 +1,128 @@
+{
+    "id": "event",
+    "label": "Event",
+    "format": "page",
+    "repeatable": true,
+    "status": true,
+    "json": {
+        "Main": {
+            "uid": {
+                "type": "UID",
+                "config": {
+                    "label": "Slug",
+                    "placeholder": "event-slug"
+                }
+            },
+            "title": {
+                "type": "Text",
+                "config": {
+                    "label": "Title",
+                    "placeholder": "Event name (e.g., NBA Finals: Lakers vs Celtics)"
+                }
+            },
+            "category": {
+                "type": "Link",
+                "config": {
+                    "label": "Category",
+                    "placeholder": "Select event category",
+                    "select": "document",
+                    "customtypes": [
+                        "category"
+                    ]
+                }
+            },
+            "date": {
+                "type": "Timestamp",
+                "config": {
+                    "label": "Event Date & Time",
+                    "placeholder": "Select event date and time"
+                }
+            },
+            "cover_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Cover Image",
+                    "constraint": {
+                        "width": 1200,
+                        "height": 630
+                    },
+                    "thumbnails": [
+                        {
+                            "name": "thumbnail",
+                            "width": 400,
+                            "height": 210
+                        }
+                    ]
+                }
+            },
+            "description": {
+                "type": "StructuredText",
+                "config": {
+                    "label": "Description",
+                    "placeholder": "Long-form description of the event",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+                }
+            },
+            "location": {
+                "type": "Text",
+                "config": {
+                    "label": "Location",
+                    "placeholder": "Venue name or address"
+                }
+            },
+            "sponsors": {
+                "type": "Group",
+                "config": {
+                    "label": "Sponsors",
+                    "fields": {
+                        "sponsor": {
+                            "type": "Link",
+                            "config": {
+                                "label": "Sponsor",
+                                "select": "document",
+                                "customtypes": [
+                                    "sponsor"
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "tags": {
+                "type": "Text",
+                "config": {
+                    "label": "Tags",
+                    "placeholder": "Comma-separated tags for filtering and SEO"
+                }
+            }
+        },
+        "SEO & Metadata": {
+            "meta_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Title",
+                    "placeholder": "A title of the event used for social media and search engines"
+                }
+            },
+            "meta_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Description",
+                    "placeholder": "A brief summary of the event"
+                }
+            },
+            "meta_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Meta Image",
+                    "constraint": {
+                        "width": 2400,
+                        "height": 1260
+                    },
+                    "thumbnails": []
+                }
+            }
+        }
+    }
+}

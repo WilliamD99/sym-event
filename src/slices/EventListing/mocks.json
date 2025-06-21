@@ -1,0 +1,15 @@
+[
+    {
+        "__TYPE__": "SharedSliceContent",
+        "variation": "default",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading1",
+                    "text": "Sports Events"
+                }
+            ]
+        },
+        "items": []
+    }
+]

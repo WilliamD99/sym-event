@@ -1,0 +1,80 @@
+{
+    "id": "sponsor",
+    "label": "Sponsor",
+    "format": "page",
+    "repeatable": true,
+    "status": true,
+    "json": {
+        "Main": {
+            "title": {
+                "type": "Text",
+                "config": {
+                    "label": "Title",
+                    "placeholder": "Name of sponsor"
+                }
+            },
+            "logo": {
+                "type": "Image",
+                "config": {
+                    "label": "Logo",
+                    "constraint": {
+                        "width": 800,
+                        "height": 400
+                    },
+                    "thumbnails": [
+                        {
+                            "name": "thumbnail",
+                            "width": 200,
+                            "height": 100
+                        }
+                    ]
+                }
+            },
+            "description": {
+                "type": "StructuredText",
+                "config": {
+                    "label": "Description",
+                    "placeholder": "Information about the sponsor",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+                }
+            },
+            "website_url": {
+                "type": "Link",
+                "config": {
+                    "label": "Website URL",
+                    "placeholder": "External link to sponsor's website",
+                    "allowTargetBlank": true,
+                    "select": "web"
+                }
+            }
+        },
+        "SEO & Metadata": {
+            "meta_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Title",
+                    "placeholder": "A title of the sponsor used for social media and search engines"
+                }
+            },
+            "meta_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Description",
+                    "placeholder": "A brief summary of the sponsor"
+                }
+            },
+            "meta_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Meta Image",
+                    "constraint": {
+                        "width": 2400,
+                        "height": 1260
+                    },
+                    "thumbnails": []
+                }
+            }
+        }
+    }
+}

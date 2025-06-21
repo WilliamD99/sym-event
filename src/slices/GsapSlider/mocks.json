@@ -1,0 +1,146 @@
+[
+    {
+        "slice_type": "gsap_slider",
+        "variation": "default",
+        "version": "initial",
+        "__TYPE__": "SharedSliceContent",
+        "primary": {},
+        "items": [
+            {
+                "__TYPE__": "GroupFieldContent",
+                "value": [
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "Text",
+                        "value": "Captain America"
+                    },
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "StructuredText",
+                        "value": [
+                            {
+                                "type": "paragraph",
+                                "text": "Recipient of the Super-Soldier serum, World War II hero Steve Rogers fights for American ideals as one of the world's mightiest heroes and the leader of the Avengers.",
+                                "spans": []
+                            }
+                        ]
+                    },
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "Text",
+                        "value": "Learn More"
+                    },
+                    {
+                        "__TYPE__": "LinkContent",
+                        "value": {
+                            "__TYPE__": "ExternalLink",
+                            "url": "https://example.com"
+                        }
+                    },
+                    {
+                        "__TYPE__": "ImageContent",
+                        "value": {
+                            "dimensions": {
+                                "width": 1920,
+                                "height": 1080
+                            },
+                            "alt": "Captain America background",
+                            "copyright": null,
+                            "url": "https://images.unsplash.com/photo-1626278664285-f796b9ee7806?w=1920&h=1080&fit=crop"
+                        }
+                    }
+                ]
+            },
+            {
+                "__TYPE__": "GroupFieldContent",
+                "value": [
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "Text",
+                        "value": "Iron Man"
+                    },
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "StructuredText",
+                        "value": [
+                            {
+                                "type": "paragraph",
+                                "text": "Genius. Billionaire. Playboy. Philanthropist. Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man.",
+                                "spans": []
+                            }
+                        ]
+                    },
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "Text",
+                        "value": "Discover More"
+                    },
+                    {
+                        "__TYPE__": "LinkContent",
+                        "value": {
+                            "__TYPE__": "ExternalLink",
+                            "url": "https://example.com"
+                        }
+                    },
+                    {
+                        "__TYPE__": "ImageContent",
+                        "value": {
+                            "dimensions": {
+                                "width": 1920,
+                                "height": 1080
+                            },
+                            "alt": "Iron Man background",
+                            "copyright": null,
+                            "url": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1920&h=1080&fit=crop"
+                        }
+                    }
+                ]
+            },
+            {
+                "__TYPE__": "GroupFieldContent",
+                "value": [
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "Text",
+                        "value": "Spider-Man"
+                    },
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "StructuredText",
+                        "value": [
+                            {
+                                "type": "paragraph",
+                                "text": "Bitten by a radioactive spider, Peter Parker's arachnid abilities give him amazing powers he uses to help others, while his personal life continues to offer plenty of obstacles.",
+                                "spans": []
+                            }
+                        ]
+                    },
+                    {
+                        "__TYPE__": "FieldContent",
+                        "type": "Text",
+                        "value": "Read More"
+                    },
+                    {
+                        "__TYPE__": "LinkContent",
+                        "value": {
+                            "__TYPE__": "ExternalLink",
+                            "url": "https://example.com"
+                        }
+                    },
+                    {
+                        "__TYPE__": "ImageContent",
+                        "value": {
+                            "dimensions": {
+                                "width": 1920,
+                                "height": 1080
+                            },
+                            "alt": "Spider-Man background",
+                            "copyright": null,
+                            "url": "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=1920&h=1080&fit=crop"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
