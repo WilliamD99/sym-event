@@ -70,15 +70,16 @@ export function MobileMenu({ isOpen, onClose, navigation, settings }: MobileMenu
             {/* Overlay */}
             <div
                 ref={overlayRef}
-                className="fixed inset-0 bg-black/50 z-40 hidden"
+                className="fixed inset-0 h-screen w-screen bg-black/50 z-50 hidden"
                 onClick={handleOverlayClick}
             />
 
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
-                className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-xl z-50 hidden"
+                className="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-white shadow-xl z-50 hidden"
             >
+
                 <div className="flex flex-col h-full">
                     {/* Header */}
                     <div className="flex items-center justify-between p-6 border-b border-slate-200">
@@ -104,8 +105,8 @@ export function MobileMenu({ isOpen, onClose, navigation, settings }: MobileMenu
                                         <PrismicNextLink
                                             field={item.link}
                                             className={`block py-3 px-4 text-lg font-medium rounded-lg transition-colors ${isActive
-                                                    ? 'text-brand bg-brand/10'
-                                                    : 'text-slate-800 hover:bg-slate-50'
+                                                ? 'text-brand bg-brand/10'
+                                                : 'text-slate-800 hover:bg-slate-50'
                                                 }`}
                                             onClick={onClose}
                                         >

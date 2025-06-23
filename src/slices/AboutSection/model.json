@@ -1,0 +1,78 @@
+{
+    "id": "about_section",
+    "type": "SharedSlice",
+    "name": "AboutSection",
+    "description": "About Section with title, subtitle, description and repeatable feature boxes",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "sktwi1xtmkfgx8626",
+            "description": "About Section",
+            "primary": {
+                "title": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Title",
+                        "placeholder": "Enter main title"
+                    }
+                },
+                "subtitle": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Subtitle",
+                        "placeholder": "Enter subtitle"
+                    }
+                },
+                "description": {
+                    "type": "StructuredText",
+                    "config": {
+                        "label": "Description",
+                        "placeholder": "Enter description",
+                        "allowTargetBlank": true,
+                        "multi": "paragraph,strong,em,hyperlink"
+                    }
+                },
+                "features": {
+                    "type": "Group",
+                    "config": {
+                        "label": "Features",
+                        "repeat": true,
+                        "fields": {
+                            "featureIcon": {
+                                "type": "Image",
+                                "config": {
+                                    "label": "Feature Icon",
+                                    "constraint": {
+                                        "width": 200,
+                                        "height": 200
+                                    },
+                                    "thumbnails": []
+                                }
+                            },
+                            "featureTitle": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Feature Title",
+                                    "placeholder": "Enter feature title"
+                                }
+                            },
+                            "featureDescription": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "label": "Feature Description",
+                                    "placeholder": "Enter feature description",
+                                    "allowTargetBlank": true,
+                                    "multi": "paragraph,strong,em"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "items": {},
+            "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+        }
+    ]
+}

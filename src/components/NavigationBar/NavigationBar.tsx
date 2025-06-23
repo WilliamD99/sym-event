@@ -11,7 +11,7 @@ export default async function NavigationBar() {
 
     return (
         <StickyNavigationWrapper>
-            <header className="py-4 ">
+            <header className="py-4 px-6">
                 <NavigationContent settings={settings} navigation={navigation} />
             </header>
         </StickyNavigationWrapper>

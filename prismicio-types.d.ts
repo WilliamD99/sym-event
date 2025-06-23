@@ -460,6 +460,9 @@ export type NavigationDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | SponsorSliderSlice
+  | ServicesGridSlice
+  | AboutSectionSlice
   | EventListingSlice
   | GsapSliderSlice
   | HeroSlice
@@ -692,6 +695,118 @@ export type AllDocumentTypes =
   | PageDocument
   | SettingsDocument
   | SponsorDocument;
+
+/**
+ * Item in *AboutSection → Default → Primary → Features*
+ */
+export interface AboutSectionSliceDefaultPrimaryFeaturesItem {
+  /**
+   * Feature Icon field in *AboutSection → Default → Primary → Features*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_section.default.primary.features[].featureIcon
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  featureIcon: prismic.ImageField<never>;
+
+  /**
+   * Feature Title field in *AboutSection → Default → Primary → Features*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Enter feature title
+   * - **API ID Path**: about_section.default.primary.features[].featureTitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  featureTitle: prismic.KeyTextField;
+
+  /**
+   * Feature Description field in *AboutSection → Default → Primary → Features*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter feature description
+   * - **API ID Path**: about_section.default.primary.features[].featureDescription
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  featureDescription: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *AboutSection → Default → Primary*
+ */
+export interface AboutSectionSliceDefaultPrimary {
+  /**
+   * Title field in *AboutSection → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Enter main title
+   * - **API ID Path**: about_section.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Subtitle field in *AboutSection → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Enter subtitle
+   * - **API ID Path**: about_section.default.primary.subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtitle: prismic.KeyTextField;
+
+  /**
+   * Description field in *AboutSection → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter description
+   * - **API ID Path**: about_section.default.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Features field in *AboutSection → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_section.default.primary.features[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  features: prismic.GroupField<
+    Simplify<AboutSectionSliceDefaultPrimaryFeaturesItem>
+  >;
+}
+
+/**
+ * Default variation for AboutSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: About Section
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<AboutSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *AboutSection*
+ */
+type AboutSectionSliceVariation = AboutSectionSliceDefault;
+
+/**
+ * AboutSection Shared Slice
+ *
+ * - **API ID**: `about_section`
+ * - **Description**: About Section with title, subtitle, description and repeatable feature boxes
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutSectionSlice = prismic.SharedSlice<
+  "about_section",
+  AboutSectionSliceVariation
+>;
 
 /**
  * Primary content in *EventListing → Default → Primary*
@@ -1136,6 +1251,206 @@ type QuoteSliceVariation = QuoteSliceDefault;
 export type QuoteSlice = prismic.SharedSlice<"quote", QuoteSliceVariation>;
 
 /**
+ * Primary content in *ServicesGrid → Default → Primary*
+ */
+export interface ServicesGridSliceDefaultPrimary {
+  /**
+   * Title field in *ServicesGrid → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: What We Do Best
+   * - **API ID Path**: services_grid.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Description field in *ServicesGrid → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: From strategy to execution, our services are built to elevate your brand, engage your audience, and drive measurable growth.
+   * - **API ID Path**: services_grid.default.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *ServicesGrid → Items*
+ */
+export interface ServicesGridSliceDefaultItem {
+  /**
+   * Card Size field in *ServicesGrid → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: Choose card size
+   * - **Default Value**: square
+   * - **API ID Path**: services_grid.items[].card_size
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  card_size: prismic.SelectField<
+    "vertical" | "horizontal" | "square",
+    "filled"
+  >;
+
+  /**
+   * Service Description field in *ServicesGrid → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Brief description of the service
+   * - **API ID Path**: services_grid.items[].service_description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  service_description: prismic.KeyTextField;
+
+  /**
+   * Background Image field in *ServicesGrid → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: services_grid.items[].background_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  background_image: prismic.ImageField<never>;
+
+  /**
+   * Category field in *ServicesGrid → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: services_grid.items[].category
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  category: prismic.ContentRelationshipField<"category">;
+}
+
+/**
+ * Default variation for ServicesGrid Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default variation
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ServicesGridSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ServicesGridSliceDefaultPrimary>,
+  Simplify<ServicesGridSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *ServicesGrid*
+ */
+type ServicesGridSliceVariation = ServicesGridSliceDefault;
+
+/**
+ * ServicesGrid Shared Slice
+ *
+ * - **API ID**: `services_grid`
+ * - **Description**: A grid layout displaying services with title, description, and background images
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ServicesGridSlice = prismic.SharedSlice<
+  "services_grid",
+  ServicesGridSliceVariation
+>;
+
+/**
+ * Primary content in *SponsorSlider → Default → Primary*
+ */
+export interface SponsorSliderSliceDefaultPrimary {
+  /**
+   * Title field in *SponsorSlider → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter the slider title
+   * - **API ID Path**: sponsor_slider.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Description field in *SponsorSlider → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter a description for the sponsor slider
+   * - **API ID Path**: sponsor_slider.default.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Button Text field in *SponsorSlider → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: View All Sponsors
+   * - **API ID Path**: sponsor_slider.default.primary.buttonText
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  buttonText: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *SponsorSlider → Default → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: Link to sponsors page or external URL
+   * - **API ID Path**: sponsor_slider.default.primary.buttonLink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  buttonLink: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+}
+
+/**
+ * Primary content in *SponsorSlider → Items*
+ */
+export interface SponsorSliderSliceDefaultItem {
+  /**
+   * Sponsor field in *SponsorSlider → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: Select a sponsor
+   * - **API ID Path**: sponsor_slider.items[].sponsor
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  sponsor: prismic.ContentRelationshipField<"sponsor">;
+}
+
+/**
+ * Default variation for SponsorSlider Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default sponsor slider with title, description, and sponsor items
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SponsorSliderSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<SponsorSliderSliceDefaultPrimary>,
+  Simplify<SponsorSliderSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *SponsorSlider*
+ */
+type SponsorSliderSliceVariation = SponsorSliderSliceDefault;
+
+/**
+ * SponsorSlider Shared Slice
+ *
+ * - **API ID**: `sponsor_slider`
+ * - **Description**: A slider component showcasing sponsors with navigation controls
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SponsorSliderSlice = prismic.SharedSlice<
+  "sponsor_slider",
+  SponsorSliderSliceVariation
+>;
+
+/**
  * Primary content in *Text → Default → Primary*
  */
 export interface TextSliceDefaultPrimary {
@@ -1368,6 +1683,11 @@ declare module "@prismicio/client" {
       SponsorDocument,
       SponsorDocumentData,
       AllDocumentTypes,
+      AboutSectionSlice,
+      AboutSectionSliceDefaultPrimaryFeaturesItem,
+      AboutSectionSliceDefaultPrimary,
+      AboutSectionSliceVariation,
+      AboutSectionSliceDefault,
       EventListingSlice,
       EventListingSliceDefaultPrimary,
       EventListingSliceVariation,
@@ -1395,6 +1715,16 @@ declare module "@prismicio/client" {
       QuoteSliceDefaultPrimary,
       QuoteSliceVariation,
       QuoteSliceDefault,
+      ServicesGridSlice,
+      ServicesGridSliceDefaultPrimary,
+      ServicesGridSliceDefaultItem,
+      ServicesGridSliceVariation,
+      ServicesGridSliceDefault,
+      SponsorSliderSlice,
+      SponsorSliderSliceDefaultPrimary,
+      SponsorSliderSliceDefaultItem,
+      SponsorSliderSliceVariation,
+      SponsorSliderSliceDefault,
       TextSlice,
       TextSliceDefaultPrimary,
       TextSliceTwoColumnsPrimary,

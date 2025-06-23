@@ -1,0 +1,224 @@
+[
+    {
+        "__TYPE__": "SharedSliceContent",
+        "variation": "default",
+        "primary": {
+            "title": {
+                "__TYPE__": "FieldContent",
+                "type": "Text",
+                "value": "What We Do Best"
+            },
+            "description": {
+                "__TYPE__": "FieldContent",
+                "type": "Text",
+                "value": "From strategy to execution, our services are built to elevate your brand, engage your audience, and drive measurable growth."
+            }
+        },
+        "items": [
+            {
+                "__TYPE__": "GroupItemContent",
+                "value": [
+                    [
+                        "card_size",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Select",
+                            "value": "vertical"
+                        }
+                    ],
+                    [
+                        "service_title",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Text",
+                            "value": "Data-Backed Strategy"
+                        }
+                    ],
+                    [
+                        "service_description",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Text",
+                            "value": "We craft marketing plans built on real insights, not guesswork—so every move has purpose."
+                        }
+                    ],
+                    [
+                        "background_image",
+                        {
+                            "__TYPE__": "ImageContent",
+                            "origin": {
+                                "id": "main",
+                                "url": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2",
+                                "width": 3456,
+                                "height": 5184
+                            },
+                            "url": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2",
+                            "width": 3456,
+                            "height": 5184,
+                            "edit": {
+                                "zoom": 1,
+                                "crop": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "background": "transparent"
+                            },
+                            "thumbnails": {}
+                        }
+                    ],
+                    [
+                        "category",
+                        {
+                            "__TYPE__": "LinkContent",
+                            "value": {
+                                "__TYPE__": "DocumentLink",
+                                "id": "mock_document_id",
+                                "type": "category",
+                                "tags": [],
+                                "lang": "en-us",
+                                "slug": "strategy",
+                                "uid": "strategy"
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "__TYPE__": "GroupItemContent",
+                "value": [
+                    [
+                        "card_size",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Select",
+                            "value": "horizontal"
+                        }
+                    ],
+                    [
+                        "service_title",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Text",
+                            "value": "Targeted Campaigns"
+                        }
+                    ],
+                    [
+                        "service_description",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Text",
+                            "value": "Reach the right audience at the right time with campaigns that convert across every platform."
+                        }
+                    ],
+                    [
+                        "background_image",
+                        {
+                            "__TYPE__": "ImageContent",
+                            "origin": {
+                                "id": "main",
+                                "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+                                "width": 5616,
+                                "height": 3744
+                            },
+                            "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+                            "width": 5616,
+                            "height": 3744,
+                            "edit": {
+                                "zoom": 1,
+                                "crop": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "background": "transparent"
+                            },
+                            "thumbnails": {}
+                        }
+                    ],
+                    [
+                        "category",
+                        {
+                            "__TYPE__": "LinkContent",
+                            "value": {
+                                "__TYPE__": "DocumentLink",
+                                "id": "mock_document_id",
+                                "type": "category",
+                                "tags": [],
+                                "lang": "en-us",
+                                "slug": "campaigns",
+                                "uid": "campaigns"
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "__TYPE__": "GroupItemContent",
+                "value": [
+                    [
+                        "card_size",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Select",
+                            "value": "square"
+                        }
+                    ],
+                    [
+                        "service_title",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Text",
+                            "value": "SEO & Content Marketing"
+                        }
+                    ],
+                    [
+                        "service_description",
+                        {
+                            "__TYPE__": "FieldContent",
+                            "type": "Text",
+                            "value": "Boost visibility and authority with content that ranks, resonates, and delivers long-term value."
+                        }
+                    ],
+                    [
+                        "background_image",
+                        {
+                            "__TYPE__": "ImageContent",
+                            "origin": {
+                                "id": "main",
+                                "url": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a",
+                                "width": 4928,
+                                "height": 3264
+                            },
+                            "url": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a",
+                            "width": 4928,
+                            "height": 3264,
+                            "edit": {
+                                "zoom": 1,
+                                "crop": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "background": "transparent"
+                            },
+                            "thumbnails": {}
+                        }
+                    ],
+                    [
+                        "category",
+                        {
+                            "__TYPE__": "LinkContent",
+                            "value": {
+                                "__TYPE__": "DocumentLink",
+                                "id": "mock_document_id",
+                                "type": "category",
+                                "tags": [],
+                                "lang": "en-us",
+                                "slug": "seo",
+                                "uid": "seo"
+                            }
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+]

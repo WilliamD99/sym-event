@@ -8,7 +8,9 @@ import { components } from "@/slices";
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
-  const page = await client.getByUID("page", "home").catch(() => notFound());
+  const page = await client.getByUID("page", "home", {
+    fetchLinks: ["category.name", "sponsor.title", "sponsor.logo", "sponsor.description", "sponsor.website_url"]
+  }).catch(() => notFound());
 
   return {
     title: asText(page.data.title),
@@ -22,7 +24,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Page() {
   const client = createClient();
-  const page = await client.getByUID("page", "home").catch(() => notFound());
+  const page = await client.getByUID("page", "home", {
+    fetchLinks: ["category.name", "sponsor.title", "sponsor.logo", "sponsor.description", "sponsor.website_url"]
+  }).catch(() => notFound());
 
   return <SliceZone slices={page.data.slices} components={components} />;
 }

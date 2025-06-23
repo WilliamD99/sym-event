@@ -1,0 +1,158 @@
+[
+    {
+        "__TYPE__": "SharedSliceContent",
+        "variation": "default",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading2",
+                    "text": "Our Valued Sponsors",
+                    "spans": []
+                }
+            ],
+            "description": [
+                {
+                    "type": "paragraph",
+                    "text": "We're proud to partner with these amazing organizations who support our events and community.",
+                    "spans": []
+                }
+            ],
+            "buttonText": "View All Sponsors",
+            "buttonLink": {
+                "link_type": "Web",
+                "url": "https://example.com/sponsors"
+            }
+        },
+        "items": [
+            {
+                "sponsor": {
+                    "id": "mock-sponsor-1",
+                    "type": "sponsor",
+                    "tags": [],
+                    "lang": "en-us",
+                    "slug": "sponsor-one",
+                    "first_publication_date": "2024-01-01T00:00:00.000Z",
+                    "last_publication_date": "2024-01-01T00:00:00.000Z",
+                    "data": {
+                        "title": "TechCorp Solutions",
+                        "logo": {
+                            "dimensions": {
+                                "width": 400,
+                                "height": 200
+                            },
+                            "alt": "TechCorp Solutions Logo",
+                            "copyright": null,
+                            "url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=200&fit=crop",
+                            "thumbnail": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 100
+                                },
+                                "alt": "TechCorp Solutions Logo",
+                                "copyright": null,
+                                "url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop"
+                            }
+                        },
+                        "description": [
+                            {
+                                "type": "paragraph",
+                                "text": "Leading technology solutions provider specializing in enterprise software and digital transformation.",
+                                "spans": []
+                            }
+                        ],
+                        "website_url": {
+                            "link_type": "Web",
+                            "url": "https://techcorp.example.com"
+                        }
+                    }
+                }
+            },
+            {
+                "sponsor": {
+                    "id": "mock-sponsor-2",
+                    "type": "sponsor",
+                    "tags": [],
+                    "lang": "en-us",
+                    "slug": "sponsor-two",
+                    "first_publication_date": "2024-01-01T00:00:00.000Z",
+                    "last_publication_date": "2024-01-01T00:00:00.000Z",
+                    "data": {
+                        "title": "Green Energy Co.",
+                        "logo": {
+                            "dimensions": {
+                                "width": 400,
+                                "height": 200
+                            },
+                            "alt": "Green Energy Co. Logo",
+                            "copyright": null,
+                            "url": "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e5?w=400&h=200&fit=crop",
+                            "thumbnail": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 100
+                                },
+                                "alt": "Green Energy Co. Logo",
+                                "copyright": null,
+                                "url": "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e5?w=200&h=100&fit=crop"
+                            }
+                        },
+                        "description": [
+                            {
+                                "type": "paragraph",
+                                "text": "Pioneering sustainable energy solutions for a cleaner tomorrow with innovative renewable technologies.",
+                                "spans": []
+                            }
+                        ],
+                        "website_url": {
+                            "link_type": "Web",
+                            "url": "https://greenenergyco.example.com"
+                        }
+                    }
+                }
+            },
+            {
+                "sponsor": {
+                    "id": "mock-sponsor-3",
+                    "type": "sponsor",
+                    "tags": [],
+                    "lang": "en-us",
+                    "slug": "sponsor-three",
+                    "first_publication_date": "2024-01-01T00:00:00.000Z",
+                    "last_publication_date": "2024-01-01T00:00:00.000Z",
+                    "data": {
+                        "title": "Innovation Labs",
+                        "logo": {
+                            "dimensions": {
+                                "width": 400,
+                                "height": 200
+                            },
+                            "alt": "Innovation Labs Logo",
+                            "copyright": null,
+                            "url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=200&fit=crop",
+                            "thumbnail": {
+                                "dimensions": {
+                                    "width": 200,
+                                    "height": 100
+                                },
+                                "alt": "Innovation Labs Logo",
+                                "copyright": null,
+                                "url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=200&h=100&fit=crop"
+                            }
+                        },
+                        "description": [
+                            {
+                                "type": "paragraph",
+                                "text": "Research and development company focused on breakthrough innovations in AI and machine learning.",
+                                "spans": []
+                            }
+                        ],
+                        "website_url": {
+                            "link_type": "Web",
+                            "url": "https://innovationlabs.example.com"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

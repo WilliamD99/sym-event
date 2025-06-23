@@ -35,6 +35,15 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "sponsor_slider": {
+              "type": "SharedSlice"
+            },
+            "services_grid": {
+              "type": "SharedSlice"
+            },
+            "about_section": {
+              "type": "SharedSlice"
+            },
             "event_listing": {
               "type": "SharedSlice"
             },

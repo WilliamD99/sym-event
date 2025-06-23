@@ -15,7 +15,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { uid } = await params;
   const client = createClient();
-  const page = await client.getByUID("page", uid).catch(() => notFound());
+  const page = await client.getByUID("page", uid, {
+    fetchLinks: ["category.name", "sponsor.title", "sponsor.logo", "sponsor.description", "sponsor.website_url"]
+  }).catch(() => notFound());
 
   return {
     title: asText(page.data.title),
@@ -30,7 +32,9 @@ export async function generateMetadata({
 export default async function Page({ params }: { params: Promise<Params> }) {
   const { uid } = await params;
   const client = createClient();
-  const page = await client.getByUID("page", uid).catch(() => notFound());
+  const page = await client.getByUID("page", uid, {
+    fetchLinks: ["category.name", "sponsor.title", "sponsor.logo", "sponsor.description", "sponsor.website_url"]
+  }).catch(() => notFound());
 
   return <SliceZone slices={page.data.slices} components={components} />;
 }

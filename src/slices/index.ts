@@ -3,12 +3,15 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  about_section: dynamic(() => import("./AboutSection")),
   event_listing: dynamic(() => import("./EventListing")),
   gsap_slider: dynamic(() => import("./GsapSlider")),
   hero: dynamic(() => import("./Hero")),
   image: dynamic(() => import("./Image")),
   image_cards: dynamic(() => import("./ImageCards")),
   quote: dynamic(() => import("./Quote")),
+  services_grid: dynamic(() => import("./ServicesGrid")),
+  sponsor_slider: dynamic(() => import("./SponsorSlider")),
   text: dynamic(() => import("./Text")),
   text_with_image: dynamic(() => import("./TextWithImage")),
 };

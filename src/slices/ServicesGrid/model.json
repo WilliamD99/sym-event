@@ -1,0 +1,75 @@
+{
+    "id": "services_grid",
+    "type": "SharedSlice",
+    "name": "ServicesGrid",
+    "description": "A grid layout displaying services with title, description, and background images",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "initial",
+            "description": "Default variation",
+            "imageUrl": "",
+            "primary": {
+                "title": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Title",
+                        "placeholder": "What We Do Best"
+                    }
+                },
+                "description": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Description",
+                        "placeholder": "From strategy to execution, our services are built to elevate your brand, engage your audience, and drive measurable growth."
+                    }
+                }
+            },
+            "items": {
+                "card_size": {
+                    "type": "Select",
+                    "config": {
+                        "label": "Card Size",
+                        "placeholder": "Choose card size",
+                        "options": [
+                            "vertical",
+                            "horizontal",
+                            "square"
+                        ],
+                        "default_value": "square"
+                    }
+                },
+                "service_description": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Service Description",
+                        "placeholder": "Brief description of the service"
+                    }
+                },
+                "background_image": {
+                    "type": "Image",
+                    "config": {
+                        "label": "Background Image",
+                        "constraint": {
+                            "width": 800,
+                            "height": 600
+                        },
+                        "thumbnails": []
+                    }
+                },
+                "category": {
+                    "type": "Link",
+                    "config": {
+                        "label": "Category",
+                        "select": "document",
+                        "customtypes": [
+                            "category"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

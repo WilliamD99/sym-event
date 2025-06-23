@@ -37,11 +37,11 @@ export default async function Footer() {
 
     return (
         <footer className="border-t border-gray-200">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-6 md:px-0">
                 {/* Main Footer Content */}
-                <div className="lg:max-w-6xl xl:max-w-10xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-6 lg:py-12 xl:py-16">
+                <div className="lg:max-w-6xl xl:max-w-10xl mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 py-6 lg:py-12 xl:py-16">
                     {/* Company Info Column */}
-                    <div className="md:col-span-2 lg:col-span-1">
+                    <div className="col-span-2 lg:col-span-1">
                         <div className="flex items-center mb-8">
                             <div className='relative w-36 h-16'>
                                 <Image
@@ -61,7 +61,7 @@ export default async function Footer() {
                     </div>
 
                     {/* About Us Column */}
-                    <div className='text-right'>
+                    <div className='md:text-right'>
                         <h3 className="text-lg font-semibold text-gray-800 mb-4">About us</h3>
                         <ul className="space-y-2">
                             {footer.data.aboutUsLinks.map((link, index) => (
@@ -78,7 +78,7 @@ export default async function Footer() {
                     </div>
 
                     {/* Get in Touch Column */}
-                    <div className='text-right'>
+                    <div className='md:text-right'>
                         <h3 className="text-lg font-semibold text-gray-800 mb-4">Get in touch</h3>
                         <ul className="space-y-2">
                             {footer.data.getInTouchLinks.map((link, index) => (
@@ -95,9 +95,9 @@ export default async function Footer() {
                     </div>
 
                     {/* Social Links Column */}
-                    <div className='text-right'>
+                    <div className='md:text-right'>
                         <h3 className="text-lg font-semibold text-gray-800 mb-4">Follow us</h3>
-                        <div className="flex flex-col justify-end items-end space-y-3">
+                        <div className="flex flex-col justify-end items-start md:items-end space-y-3">
                             {footer.data.socialLinks.map((link, index) => (
                                 <PrismicNextLink
                                     key={index}
@@ -119,7 +119,7 @@ export default async function Footer() {
                         <div className="lg:max-w-6xl xl:max-w-10xl mx-auto">
                             <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
                                 <p>© <PrismicText field={settings.data.siteTitle} /> {new Date().getFullYear()}</p>
-                                <p className="mt-2 md:mt-0">Built and Developed by <a href="https://willdoan.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Will Doan</a></p>
+                                <p className="mt-2 md:mt-0">Built and Developed by <a href="https://github.com/WilliamD99" target="_blank" rel="noopener noreferrer" className="text-brand">Will Doan</a></p>
                             </div>
                         </div>
                     </div>

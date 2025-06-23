@@ -1,0 +1,64 @@
+{
+    "id": "sponsor_slider",
+    "type": "SharedSlice",
+    "name": "SponsorSlider",
+    "description": "A slider component showcasing sponsors with navigation controls",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "initial",
+            "description": "Default sponsor slider with title, description, and sponsor items",
+            "primary": {
+                "title": {
+                    "type": "StructuredText",
+                    "config": {
+                        "label": "Title",
+                        "placeholder": "Enter the slider title",
+                        "allowTargetBlank": true,
+                        "multi": "heading1,heading2,heading3"
+                    }
+                },
+                "description": {
+                    "type": "StructuredText",
+                    "config": {
+                        "label": "Description",
+                        "placeholder": "Enter a description for the sponsor slider",
+                        "allowTargetBlank": true,
+                        "multi": "paragraph,strong,em"
+                    }
+                },
+                "buttonText": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Button Text",
+                        "placeholder": "View All Sponsors"
+                    }
+                },
+                "buttonLink": {
+                    "type": "Link",
+                    "config": {
+                        "label": "Button Link",
+                        "placeholder": "Link to sponsors page or external URL",
+                        "select": null
+                    }
+                }
+            },
+            "items": {
+                "sponsor": {
+                    "type": "Link",
+                    "config": {
+                        "label": "Sponsor",
+                        "placeholder": "Select a sponsor",
+                        "select": "document",
+                        "customtypes": [
+                            "sponsor"
+                        ]
+                    }
+                }
+            },
+            "imageUrl": ""
+        }
+    ]
+}

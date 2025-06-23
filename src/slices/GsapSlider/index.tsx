@@ -13,7 +13,7 @@ type GsapSliderProps = SliceComponentProps<any>;
 
 const GsapSlider: FC<GsapSliderProps> = ({ slice }) => {
     // === AUTOPLAY CONFIGURATION ===
-    const AUTOPLAY_ENABLED = false; // Set to false to disable autoplay
+    const AUTOPLAY_ENABLED = true; // Set to false to disable autoplay
     const AUTOPLAY_DURATION = 5000; // Duration in milliseconds (5 seconds)
     // ==============================
 
@@ -223,11 +223,42 @@ const GsapSlider: FC<GsapSliderProps> = ({ slice }) => {
                     slide.style.opacity = '1';
                     slide.style.zIndex = '10';
 
-                    // Set initial transforms to default positions
+                    // Set initial transforms to default positions for wrapper elements
                     if (slideWrapper) gsap.set(slideWrapper, { x: '0%' });
                     if (titleWrapper) gsap.set(titleWrapper, { x: '0%' });
                     if (innerWrapper) gsap.set(innerWrapper, { filter: "blur(0px)", opacity: 1 });
                     if (imgWrapper) gsap.set(imgWrapper, { x: '0%', scale: 1 });
+
+                    // Animate first slide content with slide up fade in
+                    const slideTitle = slide.querySelector('.slide-title') as HTMLElement;
+                    const slideSubtitle = slide.querySelector('.slide-subtitle') as HTMLElement;
+                    const ctaButton = slide.querySelector('[data-cta-button]') as HTMLElement;
+
+                    // Set initial positions for content elements (below and invisible)
+                    const elementsToAnimate = [slideTitle, slideSubtitle, ctaButton].filter(Boolean);
+
+                    elementsToAnimate.forEach((element, elementIndex) => {
+                        if (element) {
+                            gsap.set(element, {
+                                y: 50,
+                                opacity: 0
+                            });
+                        }
+                    });
+
+                    // Create entrance animation timeline
+                    const entranceTl = gsap.timeline({ delay: 0.5 });
+
+                    elementsToAnimate.forEach((element, elementIndex) => {
+                        if (element) {
+                            entranceTl.to(element, {
+                                duration: 0.8,
+                                y: 0,
+                                opacity: 1,
+                                ease: "power2.out"
+                            }, elementIndex * 0.2); // Stagger each element by 0.2 seconds
+                        }
+                    });
                 } else {
                     // All other slides should be hidden and positioned off-screen
                     slide.style.opacity = '0';
@@ -309,7 +340,7 @@ const GsapSlider: FC<GsapSliderProps> = ({ slice }) => {
 
     return (
         <section
-            className="relative w-full h-[500px] lg:h-screen xl:h-[1000px] overflow-hidden"
+            className="relative w-full h-[500px] lg:h-screen xl:h-[900px] overflow-hidden"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
         >
@@ -342,20 +373,22 @@ const GsapSlider: FC<GsapSliderProps> = ({ slice }) => {
                             <div className="title-wrapper z-50 pointer-events-none absolute top-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent">
                                 <div className="inner-wrapper pointer-events-auto backdrop-blur-xl p-10 border-l-4 border-brand absolute bottom-42 left-20 text-white w-auto max-w-[1000px]">
                                     {slide.title && (
-                                        <h2 className="slide-title font-playfair text-4xl font-black uppercase tracking-wide mb-4 whitespace-nowrap">
+                                        <h2 className={`slide-title font-playfair text-4xl font-black uppercase tracking-wide mb-4 whitespace-nowrap ${index === 0 ? 'opacity-0' : ''}`}>
                                             {slide.title}
                                         </h2>
                                     )}
                                     {isFilled.richText(slide.description) && (
-                                        <div className="slide-subtitle font-lato text-lg mb-8 leading-relaxed">
+                                        <div className={`slide-subtitle font-lato text-lg mb-8 leading-relaxed ${index === 0 ? 'opacity-0' : ''}`}>
                                             <PrismicRichText field={slide.description} />
                                         </div>
                                     )}
                                     {isFilled.link(slide.ctaLink) && slide.ctaText && (
-                                        <CTAButton
-                                            title={slide.ctaText}
-                                            url={slide.ctaLink.url}
-                                        />
+                                        <div data-cta-button className={index === 0 ? 'opacity-0' : ''}>
+                                            <CTAButton
+                                                title={slide.ctaText}
+                                                url={slide.ctaLink.url}
+                                            />
+                                        </div>
                                     )}
                                 </div>
                             </div>
