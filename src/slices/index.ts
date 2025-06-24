@@ -12,6 +12,7 @@ export const components = {
   quote: dynamic(() => import("./Quote")),
   services_grid: dynamic(() => import("./ServicesGrid")),
   sponsor_slider: dynamic(() => import("./SponsorSlider")),
+  studio_accordion: dynamic(() => import("./StudioAccordion")),
   text: dynamic(() => import("./Text")),
   text_with_image: dynamic(() => import("./TextWithImage")),
 };

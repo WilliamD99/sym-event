@@ -460,6 +460,7 @@ export type NavigationDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | StudioAccordionSlice
   | SponsorSliderSlice
   | ServicesGridSlice
   | AboutSectionSlice
@@ -1451,6 +1452,96 @@ export type SponsorSliderSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *StudioAccordion → Default → Primary*
+ */
+export interface StudioAccordionSliceDefaultPrimary {
+  /**
+   * Section Title field in *StudioAccordion → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: The Studio
+   * - **API ID Path**: studio_accordion.default.primary.sectionTitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  sectionTitle: prismic.KeyTextField;
+
+  /**
+   * Section Subtitle field in *StudioAccordion → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Architecture
+   * - **API ID Path**: studio_accordion.default.primary.sectionSubtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  sectionSubtitle: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *StudioAccordion → Items*
+ */
+export interface StudioAccordionSliceDefaultItem {
+  /**
+   * Panel Title field in *StudioAccordion → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Brief
+   * - **API ID Path**: studio_accordion.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Panel Description field in *StudioAccordion → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Collect customer specifications and analyze demand to provide the best solutions
+   * - **API ID Path**: studio_accordion.items[].description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Background Image field in *StudioAccordion → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: studio_accordion.items[].backgroundImage
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  backgroundImage: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for StudioAccordion Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: StudioAccordion
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type StudioAccordionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<StudioAccordionSliceDefaultPrimary>,
+  Simplify<StudioAccordionSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *StudioAccordion*
+ */
+type StudioAccordionSliceVariation = StudioAccordionSliceDefault;
+
+/**
+ * StudioAccordion Shared Slice
+ *
+ * - **API ID**: `studio_accordion`
+ * - **Description**: StudioAccordion
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type StudioAccordionSlice = prismic.SharedSlice<
+  "studio_accordion",
+  StudioAccordionSliceVariation
+>;
+
+/**
  * Primary content in *Text → Default → Primary*
  */
 export interface TextSliceDefaultPrimary {
@@ -1725,6 +1816,11 @@ declare module "@prismicio/client" {
       SponsorSliderSliceDefaultItem,
       SponsorSliderSliceVariation,
       SponsorSliderSliceDefault,
+      StudioAccordionSlice,
+      StudioAccordionSliceDefaultPrimary,
+      StudioAccordionSliceDefaultItem,
+      StudioAccordionSliceVariation,
+      StudioAccordionSliceDefault,
       TextSlice,
       TextSliceDefaultPrimary,
       TextSliceTwoColumnsPrimary,

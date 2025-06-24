@@ -1,0 +1,58 @@
+{
+    "id": "studio_accordion",
+    "type": "SharedSlice",
+    "name": "StudioAccordion",
+    "description": "StudioAccordion",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "initial",
+            "description": "StudioAccordion",
+            "primary": {
+                "sectionTitle": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Section Title",
+                        "placeholder": "The Studio"
+                    }
+                },
+                "sectionSubtitle": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Section Subtitle",
+                        "placeholder": "Architecture"
+                    }
+                }
+            },
+            "items": {
+                "title": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Panel Title",
+                        "placeholder": "Brief"
+                    }
+                },
+                "description": {
+                    "type": "StructuredText",
+                    "config": {
+                        "label": "Panel Description",
+                        "placeholder": "Collect customer specifications and analyze demand to provide the best solutions",
+                        "allowTargetBlank": true,
+                        "multi": "paragraph,strong,em"
+                    }
+                },
+                "backgroundImage": {
+                    "type": "Image",
+                    "config": {
+                        "label": "Background Image",
+                        "constraint": {},
+                        "thumbnails": []
+                    }
+                }
+            },
+            "imageUrl": ""
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+[
+    {
+        "__TYPE__": "SharedSliceContent",
+        "variation": "default",
+        "primary": {
+            "sectionTitle": "The Studio",
+            "sectionSubtitle": "Architecture"
+        },
+        "items": [
+            {
+                "title": "Brief",
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Collect customer specifications and analyze demand to provide the best solutions",
+                        "spans": []
+                    }
+                ],
+                "backgroundImage": {
+                    "dimensions": {
+                        "width": 400,
+                        "height": 600
+                    },
+                    "alt": "Brief background",
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=600&fit=crop"
+                }
+            },
+            {
+                "title": "Space Planning",
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Strategic layout and spatial organization for optimal functionality and flow",
+                        "spans": []
+                    }
+                ],
+                "backgroundImage": {
+                    "dimensions": {
+                        "width": 400,
+                        "height": 600
+                    },
+                    "alt": "Space Planning background",
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=600&fit=crop"
+                }
+            },
+            {
+                "title": "Concept",
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Creative ideation and conceptual development tailored to your vision",
+                        "spans": []
+                    }
+                ],
+                "backgroundImage": {
+                    "dimensions": {
+                        "width": 400,
+                        "height": 600
+                    },
+                    "alt": "Concept background",
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=600&fit=crop"
+                }
+            },
+            {
+                "title": "Materials",
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Careful selection of premium materials and finishes for lasting quality",
+                        "spans": []
+                    }
+                ],
+                "backgroundImage": {
+                    "dimensions": {
+                        "width": 400,
+                        "height": 600
+                    },
+                    "alt": "Materials background",
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=600&fit=crop"
+                }
+            },
+            {
+                "title": "Presentation",
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Comprehensive design presentation with detailed visualizations and specifications",
+                        "spans": []
+                    }
+                ],
+                "backgroundImage": {
+                    "dimensions": {
+                        "width": 400,
+                        "height": 600
+                    },
+                    "alt": "Presentation background",
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=600&fit=crop"
+                }
+            }
+        ]
+    }
+]
