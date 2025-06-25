@@ -103,7 +103,7 @@ const AboutSection: FC<AboutSectionProps> = ({ slice }) => {
                     {/* Left side - Main content */}
                     <div className="space-y-6">
                         {isFilled.keyText(slice.primary.title) && (
-                            <h2 ref={titleRef} className="text-2xl text-white tracking-wide md:text-4xl lg:text-5xl font-bold font-playfair leading-tight">
+                            <h2 ref={titleRef} className="text-2xl tracking-wide md:text-4xl lg:text-5xl font-bold font-playfair leading-tight" style={{ color: "#4A3F35" }}>
                                 {slice.primary.title}
                             </h2>
                         )}
@@ -120,7 +120,7 @@ const AboutSection: FC<AboutSectionProps> = ({ slice }) => {
                             </div>
                         )}
                         <Link href="/events" className="inline-block cta-button">
-                            <Button className="bg-transparent tracking-wide transition-all duration-300 px-8 py-6 font-playfair border-[1px] cursor-pointer border-gray-800 text-gray-800 hover:bg-white hover:text-black xl:text-lg">Our Events</Button>
+                            <Button style={{ backgroundColor: "#4A3F35" }} className="bg-transparent tracking-wide transition-all duration-300 px-8 py-6 font-playfair font-bold border-[1px] cursor-pointer border-gray-800 text-white hover:bg-white hover:opacity-85 xl:text-lg">Our Events</Button>
                         </Link>
                     </div>
 

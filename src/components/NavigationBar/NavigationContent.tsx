@@ -45,7 +45,7 @@ export function NavigationContent({ settings, navigation }: NavigationContentPro
                             return (
                                 <li
                                     key={asText(item.label)}
-                                    className={`font-semibold xl:text-xl font-playfair font-semibold tracking-wide hover:text-brand duration-200 ${isActive ? 'text-brand' : 'text-slate-800'
+                                    className={`font-semibold xl:text-xl font-lato font-semibold tracking-wide hover:text-brand duration-200 ${isActive ? 'text-brand' : 'text-slate-800'
                                         }`}
                                 >
                                     <PrismicNextLink field={item.link}>
@@ -57,7 +57,7 @@ export function NavigationContent({ settings, navigation }: NavigationContentPro
                     </ul>
                 </nav>
                 <div className='hidden md:block'>
-                    <Button className="bg-brand text-white hover:bg-brand/90 cursor-pointer px-8 py-6 lg:text-xl font-playfair tracking-wide font-semibold">Contact Us</Button>
+                    <Button className="bg-brand text-white hover:bg-brand/90 cursor-pointer px-8 py-6 lg:text-xl font-lato tracking-wide font-semibold">Contact Us</Button>
                 </div>
                 {/* Mobile Menu Button - Only visible on mobile */}
                 <button

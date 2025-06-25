@@ -95,6 +95,17 @@
                         }
                     }
                 }
+            },
+            "backgroundImage": {
+                "type": "Image",
+                "config": {
+                    "label": "Background Image",
+                    "placeholder": "Background image for newsletter section",
+                    "constraint": {
+                        "width": 1920,
+                        "height": 400
+                    }
+                }
             }
         }
     }
